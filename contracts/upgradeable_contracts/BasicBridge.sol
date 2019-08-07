@@ -130,4 +130,8 @@ contract BasicBridge is Initializable, Validatable, Ownable, Upgradeable, Claima
     function claimTokens(address _token, address _to) public onlyIfUpgradeabilityOwner validAddress(_to) {
         claimValues(_token, _to);
     }
+
+    function testMethod() public returns (string) {
+        return "testMethod string";
+    }
 }
