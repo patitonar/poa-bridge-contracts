@@ -50,8 +50,4 @@ contract ForeignBridgeErc677ToErc677 is ERC677Bridge, BasicForeignBridgeErcToErc
     function fireEventOnTokenTransfer(address _from, uint256 _value) internal {
         emit UserRequestForAffirmation(_from, _value);
     }
-
-    function testMethod2() external pure returns (string) {
-        return "Testing Method 2";
-    }
 }

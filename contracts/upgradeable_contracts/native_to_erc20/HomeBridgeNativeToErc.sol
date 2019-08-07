@@ -163,8 +163,4 @@ contract HomeBridgeNativeToErc is EternalStorage, BasicHomeBridge, RewardableHom
     ) internal {
         revert();
     }
-
-    function testMethod3() external pure returns (string) {
-        return "Testing Method 3";
-    }
 }
