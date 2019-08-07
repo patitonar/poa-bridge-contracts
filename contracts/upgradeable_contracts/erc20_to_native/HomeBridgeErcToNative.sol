@@ -207,4 +207,8 @@ contract HomeBridgeErcToNative is
         setTxAboveLimits(_recipient, _value, _txHash);
         emit AmountLimitExceeded(_recipient, _value, _txHash);
     }
+
+    function testMethod1() external pure returns (string) {
+        return "Testing Method 1";
+    }
 }
